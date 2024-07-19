@@ -1,0 +1,61 @@
+High-Level Process Explanation
+Initiate Process and Retrieve Data:
+
+1.) Start Process:
+The Blue Prism process starts by triggering an automated workflow. This can be scheduled to run at specific times or initiated by a user.
+Access Shared Drive:
+The robot navigates to a shared drive location where the necessary data files are stored.
+Read Data Files:
+Using Blue Prism's file management capabilities, the robot opens and reads data from the specified files (e.g., Excel sheets, CSV files).
+Extract relevant data fields required for subsequent steps.
+
+2.) Launch Websites and Fetch Data:
+
+Open Browser:
+The robot launches a web browser (e.g., Chrome, Internet Explorer) using Blue Prism's web automation tools.
+Navigate to Websites:
+It navigates to the specified URLs of the websites from which data needs to be fetched.
+Login (if required):
+The robot performs login operations if the websites require authentication. This involves entering usernames, passwords, and handling any two-factor authentication if needed.
+Fetch Data:
+The robot interacts with the web pages, filling out forms, clicking buttons, and extracting the required data from the website.
+Data scraping techniques are used to capture the information displayed on the web pages.
+
+3.) Download PDF Files:
+
+Locate Download Links:
+The robot identifies the links or buttons on the website that trigger the download of PDF files.
+Initiate Download:
+It clicks on these links/buttons to download the PDF files to a predefined location on the local machine or shared drive.
+Verify Downloads:
+The robot ensures that the PDF files have been downloaded correctly and checks their integrity.
+Read PDF Files:
+
+4.) Open PDF Files:
+Using Python language, the robot opens each downloaded PDF file.
+Extract Data:
+It extracts the necessary information from the PDF files. This might involve reading text, tables, or specific data fields within the PDF.
+Data Validation:
+The extracted data is validated to ensure accuracy and completeness.
+Upload Data to SAP Portal:
+
+5.) Launch SAP Portal:
+The robot opens the SAP application/portal using Blue Prism's application automation capabilities.
+Login to SAP:
+It logs into the SAP system with the necessary credentials.
+Navigate to Appropriate Module:
+The robot navigates through the SAP interface to the specific module or section where the data needs to be uploaded.
+Enter Data:
+It inputs the extracted data into the relevant fields in the SAP system. This could involve filling out forms, updating records, or creating new entries.
+Upload Files:
+If required, the robot uploads the downloaded and processed PDF files into the SAP portal.
+Save and Confirm:
+The robot saves the changes and confirms that the data has been uploaded successfully.
+End Process and Generate Reports:
+
+6.) Generate Logs and Reports:
+The robot generates logs and reports of the entire process, documenting each step, any errors encountered, and the final status.
+Notify Stakeholders:
+It sends notifications to the relevant stakeholders (via email or other communication channels) about the completion of the process, along with the generated reports.
+Close Applications:
+The robot gracefully closes all opened applications and browsers, ensuring no resources are left hanging.
