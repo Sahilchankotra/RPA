@@ -1,0 +1,61 @@
+High-Level Workflow
+Initiate Process:
+
+1.) Start the Process:
+  The automated workflow is triggered to start the process. This can be scheduled or initiated manually.
+
+2.) Read Emails from Outlook Shared Folder:
+  a.) Access Outlook:
+  The robot opens Outlook and navigates to the shared folder where client emails are stored.
+  b.) Retrieve Emails:
+  It reads the emails, identifying those that contain attachments (Excel, PDF files).
+  c.) Download Attachments:
+  The robot downloads the attached documents from the identified emails to a local or shared drive.
+
+3.) Process Documents:
+  a.) Open Documents:
+  The robot opens each downloaded document (Excel, PDF files).
+  b.) Read Document Contents:
+  It extracts the required data from the documents using appropriate reading utilities.
+  c.) Validate Data:
+  The robot validates the extracted data for completeness and accuracy.
+
+4.) Fetch Details from SAP Application:
+  a.) Launch SAP Application:
+  The robot launches the SAP application and logs in with the necessary credentials.
+  b.) Navigate to Relevant Module:
+  It navigates to the specific module or section of SAP required for data retrieval.
+  c.) Fetch Data:
+  The robot fetches the required details from the SAP application based on the data extracted from the documents.
+
+5.) Insert Data into Oracle Database:
+  a.) Connect to Oracle Database:
+  The robot establishes a connection to the Oracle database.
+  b.) Insert Data:
+  It inserts the fetched data into the appropriate tables in the Oracle database.
+  c.) Verify Insertion:
+  The robot verifies that the data has been inserted correctly into the database.
+
+6.) Process and Upload Text to SAP Application:
+
+  a.) Prepare Text for Upload:
+  The robot processes the downloaded text, adding any extra required details.
+  b.) Launch SAP Application:
+  It launches the SAP application again (if not already open).
+  c.) Navigate to Upload Module:
+  The robot navigates to the section of SAP where the text needs to be uploaded.
+  d.) Upload Text:
+  It uploads the processed text with the additional details into the SAP application.
+
+7.) Generate Logs and Reports:
+  a.) Generate Process Logs:
+  The robot generates logs of the entire process, detailing each step and any errors encountered.
+  b.) Notify Stakeholders:
+  It sends notifications to relevant stakeholders about the process completion, along with the logs and reports.
+  
+8.) End Process:
+
+  a.) Close Applications:
+  The robot gracefully closes all opened applications and logs out of systems.
+  b.) Cleanup:
+  It performs any necessary cleanup activities, such as deleting temporary files or releasing resources.
